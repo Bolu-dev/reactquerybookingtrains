@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  /* Branding Colors */
+  --color-train-orange: #ff5f00;
+  --color-train-orange-light: #fff0e6;
+
+  /* Neutrals & UI */
+  --color-train-dark: #1a1a1a;
+  --color-train-gray-text: #8a8a8e;
+  --color-train-gray-bg: #f2f2f7;
+  --color-train-border: #e5e5ea;
+
+  /* Status */
+  --color-train-green: #00c853;
+
+  /* Custom Border Radius (v4 style) */
+  --radius-train-card: 24px;
+  --radius-train-btn: 9999px;
+
+  /* The main page background (The "Ash" color) */
+  --color-train-bg: #f8f8f8;
+
+  /* The Card color (Pure white to contrast the background) */
+  --color-train-card: #ffffff;
+
+  /* The accent colors from before */
+
+  /* A very soft gray-white for the input background */
+  --color-train-input: #f2f2f7;
+
+  /* A slightly darker border for when the user clicks */
+  --color-train-input-focus: #e5e5ea;
+
+  /* The specific orange from your image for the text/icon */
+  --color-train-orange: #ff5f00;
+
+  --color-train-dark: #1a1a1a;
+  --image-train-hero: url("./speedtrain.jpg");
+}
