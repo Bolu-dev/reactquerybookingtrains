@@ -53,13 +53,13 @@ export async function updateUser({ fullName, email, password, avatar }) {
   const fileName = `avatar-${data.user.id}`;
 
   const { error: storageError } = await supabase.storage
-    .from("avatars")
+    .from("avatar")
     .upload(fileName, avatar, { upsert: true });
 
   if (storageError) throw new Error(storageError.message);
 
   // Save avatar URL to user metadata
-  const avatarUrl = `${supabaseUrl}/storage/v1/object/public/avatars/${fileName}`;
+  const avatarUrl = `${supabaseUrl}/storage/v1/object/public/avatar/${fileName}`;
 
   const { data: updatedUser, error: updateError } =
     await supabase.auth.updateUser({
